@@ -2,3 +2,7 @@
 /node_modules
 /outline
 /solid
+
+#figma-export-icons
+import-outline-config.json
+import-solid-config.json
