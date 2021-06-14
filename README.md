@@ -16,6 +16,32 @@
     <a href="https://github.com/tailwindlabs/heroicons/blob/master/LICENSE"><img src="https://img.shields.io/npm/l/heroicons.svg" alt="License"></a>
 </p>
 
+## Auto-import from Figma
+
+1. Fork Heroicons community figma file
+2. Frame outline/solid icons sets into `icons_outline` and `icons_solid` frames.
+3. Create `./import-outline-config.json`:
+  ```json
+  {
+    "figmaPersonalToken": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "fileId": "JBZiA0cWLynkYAYX56fWTp",
+    "page": "Heroicons",
+    "frame": "icons_outline",
+    "iconsPath": "./"
+  }
+  ```
+4. Create `./import-solid-config.json`:
+  ```json
+  {
+    "figmaPersonalToken": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "fileId": "JBZiA0cWLynkYAYX56fWTp",
+    "page": "Heroicons",
+    "frame": "icons_solid",
+    "iconsPath": "./"
+  }
+  ```
+5. To import icons run `yarn figma-import-solid` or `yarn  figma-import-outline` for solid and outline icons respectfully.
+6. Then run `yarn build`
 
 ## Basic Usage
 
