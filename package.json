@@ -10,7 +10,7 @@
     "prepublishOnly": "npm run build",
     "figma-import-solid": "npx https://github.com/LeonidasEsteban/figma-export-icons --config import-solid-config.json",
     "figma-import-outline": "npx https://github.com/LeonidasEsteban/figma-export-icons --config import-outline-config.json",
-    "figma-import-all": "yarn run figma-import-solid figma-import-outline",
+    "figma-import-all": "yarn run figma-import-solid && yarn run figma-import-outline",
     "build": "npm run build-outline && npm run build-solid && npm run build-react && npm run build-vue",
     "build-react": "node ./scripts/build.js react",
     "build-vue": "node ./scripts/build.js vue",
